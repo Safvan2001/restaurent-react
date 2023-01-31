@@ -1,0 +1,102 @@
+api call in js
+...............
+
+AJAX
+
+-XMLhttp
+-fetch
+-asynch await
+
+
+useEffect 
+........
+instead of ngOnInit in angular,in react we use hook useEffect
+
+
+
+redierection In react
+.......................
+
+react-router-dom
+
+install     -npm i react-router-dom
+
+    BrowserRouter as Router -all routing need components
+    Routes                  -to set paths need for each components
+    Route                   -morethan one path
+
+
+
+useParams -
+..........
+
+   hook used to access params from component url
+
+
+ REDUX
+........
+
+coupling   : many connection between parent and child component
+
+
+props drilling : in coupling if any intermediate component have any errors all other childs will not work
+
+
+to avoid props drilling we need to reduce coupling and make all the components independent
+
+
+for this react introduced a new technology  - state management technology -REDUX
+
+
+REDUX process
+..............
+
+create a new js file to keep the states ,all the components can access the js file 
+
+- the components can access the datas from the js file 
+  but the cant update datas in js file
+
+
+
+
+   
+                 (diagram imprt) 
+
+
+
+
+
+
+
+
+  -Action -> a file where all the logic update the state 
+
+  -Dispatch -> method used to Dispatch the logic in Action file when the component need state updation
+
+  -Reducer (library) -> update the datas in js file according to the paylod response get from Action file 
+
+
+libraries to apply REDUX
+.........................
+
+1- REDUX
+2-REACT-REDUX
+3-REACT-THUNK
+
+   to install : npm i redux react-redux redux-thunk
+
+
+   createStore() - method used to create store in js file
+                :-  2  args
+                   |      |
+            1:reducer    2:middleware (used to make synchronus redux into asynchronous)
+
+
+applyMiddleware -method in Redux to apply middleware
+combineReduces()-method in REDUX used to combine all the reducers in js file
+
+thunk - used to create middleware
+
+1.create store
+2.apply the store in index.js  
+  provider tag - it is a tag, used to pass the store (react-redux)
