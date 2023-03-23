@@ -1,3 +1,7 @@
+install react
+..............
+npx create-react-app Name
+
 api call in js
 ...............
 
@@ -79,7 +83,7 @@ create a new js file to keep the states ,all the components can access the js fi
 libraries to apply REDUX
 .........................
 
-1- REDUX
+1-REDUX
 2-REACT-REDUX
 3-REACT-THUNK
 
@@ -92,7 +96,7 @@ libraries to apply REDUX
             1:reducer    2:middleware (used to make synchronus redux into asynchronous)
 
 
-applyMiddleware -method in Redux to apply middleware
+applyMiddleware()-method in Redux to apply middleware
 combineReduces()-method in REDUX used to combine all the reducers in js file
 
 thunk - used to create middleware
@@ -100,3 +104,19 @@ thunk - used to create middleware
 1.create store
 2.apply the store in index.js  
   provider tag - it is a tag, used to pass the store (react-redux)
+
+
+ AXIOS
+.........
+
+module used to make http methods(api call)
+ 
+ -npm i axios
+
+ useDispatch - hook used to Dispatch action in components-(react-redux)
+
+
+
+
+ to access datas from store to component -useSelector - hook
+ 
